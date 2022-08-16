@@ -1,0 +1,61 @@
+{
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "pk",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "sk",
+      "AttributeType": "S"
+    }
+  ],
+  "TableName": "pix",
+  "KeySchema": [
+    {
+      "AttributeName": "pk",
+      "KeyType": "HASH"
+    },
+    {
+      "AttributeName": "sk",
+      "KeyType": "RANGE"
+    }
+  ],
+  "TableStatus": "ACTIVE",
+  "CreationDateTime": "2022-08-01T23:52:24.428Z",
+  "ProvisionedThroughput": {
+    "LastIncreaseDateTime": "1970-01-01T00:00:00.000Z",
+    "LastDecreaseDateTime": "1970-01-01T00:00:00.000Z",
+    "NumberOfDecreasesToday": 0,
+    "ReadCapacityUnits": 3,
+    "WriteCapacityUnits": 3
+  },
+  "TableSizeBytes": 158,
+  "ItemCount": 1,
+  "TableArn": "arn:aws:dynamodb:ddblocal:000000000000:table/pix",
+  "GlobalSecondaryIndexes": [
+    {
+      "IndexName": "gsi_reverse",
+      "KeySchema": [
+        {
+          "AttributeName": "sk",
+          "KeyType": "HASH"
+        },
+        {
+          "AttributeName": "pk",
+          "KeyType": "RANGE"
+        }
+      ],
+      "Projection": {
+        "ProjectionType": "ALL"
+      },
+      "IndexStatus": "ACTIVE",
+      "ProvisionedThroughput": {
+        "ReadCapacityUnits": 3,
+        "WriteCapacityUnits": 3
+      },
+      "IndexSizeBytes": 158,
+      "ItemCount": 1,
+      "IndexArn": "arn:aws:dynamodb:ddblocal:000000000000:table/pix/index/gsi_reverse"
+    }
+  ]
+}
