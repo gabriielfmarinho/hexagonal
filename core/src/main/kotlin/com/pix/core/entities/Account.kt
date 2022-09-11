@@ -1,8 +1,10 @@
 package com.pix.core.entities
 
+import com.pix.core.annotations.NoArgs
 import com.pix.core.entities.AccountStatus.ACTIVE
 import com.pix.core.entities.AccountType.CURRENT
 
+@NoArgs
 data class Account(
     val agency: String,
     val number: String,

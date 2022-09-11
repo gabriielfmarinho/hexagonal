@@ -9,8 +9,9 @@ buildscript {
 plugins {
     id("org.springframework.boot") version "2.7.1"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	kotlin("jvm") version "1.6.21"
-	kotlin("plugin.spring") version "1.6.21"
+    id("org.jetbrains.kotlin.plugin.noarg") version "1.3.41"
+    kotlin("jvm") version "1.6.21"
+    kotlin("plugin.spring") version "1.6.21"
 }
 
 allprojects {
@@ -39,5 +40,4 @@ subprojects {
     repositories {
         mavenCentral()
     }
-
 }
